@@ -32,8 +32,12 @@ export class RecipesService {
   }
 
   deleteRecipe(recipeId: string) {
-    this.recipes = this.recipes.filter(recipe => {
+     this.recipes =  this.recipes.filter(recipe => {
       return recipe.id !== recipeId;
     });
+    // let index = this.recipes.indexOf(recipe);
+    // if(index > -1) {
+    //   this.recipes.splice(index, 1);
+    // }
   }
 }
